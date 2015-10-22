@@ -1,0 +1,9 @@
+{
+  "name": "SreApp",
+  "version": "0.0.1",
+  "description": "A Node.js App using express for SRE",
+  "dependencies": {
+	"express": "*"
+   },
+  "engine": "node >=0.6.x"
+}

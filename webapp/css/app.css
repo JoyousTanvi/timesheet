@@ -1,0 +1,28 @@
+
+/* Disable number input spinners */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.header {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: #996699;
+}
+
+.header h1 {
+    line-height: 60px;
+    text-align: center;
+    margin: 0px;
+    color: white;
+}
+
+.addPanel {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: #CCCCCC;
+}

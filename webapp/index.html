@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="timesheetApp">
+ 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+    <title>Timesheet</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <!-- bootstrap 3.0.2 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- application style -->
+    <!--<link href="css/simple-sidebar.css" rel="stylesheet">-->
+    <link href="css/app.css" rel="stylesheet" type="text/css" />
+
+     <!-- jQuery 2.1.4 -->
+    <script src="lib/jquery-2.1.4.min.js"></script>
+    <!--Angular -->
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="lib/bootstrap.min.js" type="text/javascript"></script>
+    
+    <!--application JS-->
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/personalDetails.js"></script>
+
+
+    <!--npm modules-->
+    <script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+
+
+</head>
+ 
+<body ng-controller="mainController">
+
+    <div class="header">
+        <h1>Timesheet Generator</h1>
+    </div>
+
+    <!-- Add -->
+
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default" id="panelAddUser">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-target="#collapseAddUser" href="#collapseAddUser">Add User</a>
+            </h4>
+        </div>
+        <div id="collapseAddUser" class="panel-collapse collapse">
+            <div class="panel-body">
+                <form class="form-inline" name="form" ng-submit="addUser()">
+                  <div class="form-group">
+                    <label for="userName">Name</label>
+                    <input type="text" class="form-control" id="userName" placeholder="John Doe" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="userID">Emp ID</label>
+                    <input type="number" class="form-control" id="userID" placeholder="123456" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Add User</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Add Ends ->
+
+
+  
+
+</body>
+
+</html>
